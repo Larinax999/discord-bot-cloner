@@ -8,7 +8,7 @@ npm i
 ```
 ## Usage
 
-cloner!clone \[mentions\] (prefix)
+cloner!clone <mentions> <prefix> (command list)
 
 **ระบบต่างๆ ที่รองรับ**
 - ระบบหา prefix แบบอัจฉริยะ
