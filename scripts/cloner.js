@@ -94,6 +94,9 @@ class Cloner extends EventEmitter {
         })
     }
     save() {}
+	add(command) {
+		this.tasklist.push(command)
+	}
     load() {
 
     }
