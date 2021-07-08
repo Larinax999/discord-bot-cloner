@@ -22,6 +22,9 @@ exports.run = async (bot, message, args) => {
         return msg.edit(`:x: ไม่พบ prefix ของ ${target.tag}`)
     }
     await msg.edit(`prefix ของ ${target.tag} คือ \`${cloner.prefix}\``)
+	for (let i=2;i < args.length;i++) {
+		cloner.add(args[i])
+	}
     await new Promise((resolve) => setTimeout(resolve, 1000))
     cloner.cloneall()
     cloner.on("cloned",(command)=>{
